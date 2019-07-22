@@ -1,1 +1,7 @@
-check50: true
+check50:
+  checks:
+    hello world:
+      - run: python3 main.py # run python3 hello.py
+        stdin: 2000
+        stdout: Das Jahr 2000 ist ein Schaltjahr # expect Hello, world! in stdout
+        exit: 0 # expect program to exit with exitcode 0
